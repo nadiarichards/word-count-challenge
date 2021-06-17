@@ -1,6 +1,4 @@
-# word-count-challenge
-
-#2. Word Count Challenge
+# 2. Word Count Challenge
 
 Creating a word count app that would return a couple of different measurements.
 
