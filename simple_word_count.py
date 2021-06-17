@@ -1,14 +1,19 @@
 import re
 
-sample_text = open("sample3.txt", "r")
-word_count=0
+def word_count(text_file):
 
-for line in sample_text:
-    line=line.strip()
-    line = re.sub(r'[^\w\s]','',line)
-    words=line.split(" ")
+    sample_text = open(text_file, "r")
+    word_count=0
 
-    for word in words:
-        word_count+=1
+    for line in sample_text:
+        line=line.strip()
+        line = re.sub(r'[^\w\s]','',line)
+        words=line.split(" ")
 
-print (f"Total Words: {word_count}")
+        for word in words:
+            word_count+=1
+
+    print (f"Total Words: {word_count}")
+
+word_count('sample3.txt')
+
