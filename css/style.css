@@ -1,18 +1,19 @@
-footer {
+/* footer {
   text-align: center;
   padding: 17px;
-  background-color: rgb(1, 9, 58);
-  color: white;
+  background-color: rgb(11, 242, 169);
+  color: rgb(15, 15, 14);
   left: 0;
   right: 0;
   bottom: 0;
-}
+} */
 
 .header {
   text-align: center;
   padding: 25px;
-  background-color: rgb(34, 230, 17);
-  color: rgb(1, 9, 58);
+  height: 1000px;
+  background-image: url("https://www.thesprucecrafts.com/thmb/0763mQYsZkygIvKlFAIDYY3h-b0=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-579236076-59641e375f9b583f18138ca1.jpg");
+  color: rgb(15, 15, 14);
   position: absolute;
   left: 0;
   right: 0;

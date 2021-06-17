@@ -24,3 +24,8 @@
 //     d3.select('input').node().value = "";
 //     showTable(filteredData);
 // };
+
+function processText() {
+    let text_file=document.getElementById("txt_file")
+    console.log(text_file[0])
+}
