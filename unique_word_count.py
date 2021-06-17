@@ -1,18 +1,23 @@
 import re
 
-sample_text = open("sample3.txt", "r")
-dict = {}
+def unique_word_count(text_file):
 
-for line in sample_text:
-    line=line.strip().lower()
-    line = re.sub(r'[^\w\s]','',line)
-    words=line.split(" ")
+    sample_text = open(text_file, "r")
+    dict = {}
 
-    for word in words:
-        if word in dict:
-            dict[word] = dict[word]+1
-        else:
-            dict[word] =1
+    for line in sample_text:
+        line=line.strip().lower()
+        line = re.sub(r'[^\w\s]','',line)
+        words=line.split(" ")
 
-for key in list(dict.keys()):
-    print(key, ":", dict[key])
+        for word in words:
+            if word in dict:
+                dict[word] = dict[word]+1
+            else:
+                dict[word] =1
+
+    for key in list(dict.keys()):
+        if dict[key] >= 5:
+            print(key, ":", dict[key])
+
+unique_word_count('sample3.txt')
