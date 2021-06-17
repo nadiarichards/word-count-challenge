@@ -1,5 +1,4 @@
 import re
-import pprint
 
 sample_text = open("sample3.txt", "r")
 dict = {}
@@ -17,9 +16,5 @@ for line in sample_text:
             else:
                 dict[character] =1
 
-for char in sorted (dict):
-    pprint (char, ":", dict[char])
-
-
-# for key in list(dict.keys()):
-#     print(key, ":", dict[key])
+for k, v in sorted (dict.items()):
+    print (k, ':', v)
