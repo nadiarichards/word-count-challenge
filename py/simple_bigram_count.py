@@ -10,4 +10,4 @@ def bigram_counter(text_file):
         if v >= 2:
             print (k, ':', v)
 
-bigram_counter('sample3.txt')
+bigram_counter('../sample3.txt')

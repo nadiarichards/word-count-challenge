@@ -12,4 +12,4 @@ def sentence_count(text_file):
 
     print (f"Total Sentences: {len(sentences)}")
 
-sentence_count('sample3.txt')
+sentence_count('../sample3.txt')

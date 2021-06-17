@@ -19,4 +19,4 @@ def paragraph_and_line_count(text_file):
 
     print (f"Total Paragraphs: {paragraph_count} \nTotal Lines: {line_count}")
 
-paragraph_and_line_count('sample3.txt')
+paragraph_and_line_count('../sample3.txt')

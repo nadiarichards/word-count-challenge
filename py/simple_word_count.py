@@ -15,5 +15,5 @@ def word_count(text_file):
 
     print (f"Total Words: {word_count}")
 
-word_count('sample3.txt')
+word_count('../sample3.txt')
 

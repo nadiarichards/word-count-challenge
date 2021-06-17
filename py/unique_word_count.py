@@ -20,4 +20,4 @@ def unique_word_count(text_file):
         if dict[key] >= 5:
             print(key, ":", dict[key])
 
-unique_word_count('sample3.txt')
+unique_word_count('../sample3.txt')

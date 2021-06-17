@@ -7,4 +7,4 @@ def word_occurrence(text_file, word):
 
     print (f'Number of Occurrences of the word "{word}": {occurrences}')
 
-word_occurrence('sample3.txt', 'esse')
+word_occurrence('../sample3.txt', 'esse')

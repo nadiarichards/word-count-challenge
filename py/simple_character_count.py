@@ -16,4 +16,4 @@ def character_count(text_file):
 
     print (f"Total Characters: {char_count}")
 
-character_count('sample3.txt')
+character_count('../sample3.txt')

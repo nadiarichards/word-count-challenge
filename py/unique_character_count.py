@@ -21,4 +21,4 @@ def unique_character_count(text_file):
     for k, v in sorted (dict.items()):
         print (k, ':', v)
 
-unique_character_count('sample3.txt')
+unique_character_count('../sample3.txt')
