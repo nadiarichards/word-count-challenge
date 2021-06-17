@@ -11,4 +11,4 @@ for line in sample_text:
     for word in words:
         word_count+=1
 
-print(word_count)
+print (f"Total Words: {word_count}")

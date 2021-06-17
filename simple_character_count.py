@@ -13,4 +13,4 @@ for line in sample_text:
         for character in word:
             char_count+=1
 
-print (char_count)
+print (f"Total Characters: {char_count}")
