@@ -1,6 +1,3 @@
-# def insert_line_para_nums(text):
-#     text = open(text, 'r')
-
 sample_text = open("sample3.txt", "r")
 line_count = 0
 paragraph_count = 0
@@ -17,6 +14,5 @@ for i in sample_text:
             paragraph_number = 0
     else:
             paragraph_number = paragraph_count
-# sample_text.close()
 
-print (f"Total Paragraphs: {paragraph_count} \n Total Lines: {line_count}")
+print (f"Total Paragraphs: {paragraph_count} \nTotal Lines: {line_count}")
