@@ -11,7 +11,8 @@ words = re.findall('\w+', open('sample3.txt').read())
 bigram_counter=Counter(zip(words, words[1:]))
 
 for k, v in bigram_counter.items():
-    print (k, ':', v)
+    if v >= 2:
+        print (k, ':', v)
 # print (Counter(zip(words, words[1:])))
 
 # line_count = 0
