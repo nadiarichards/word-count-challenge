@@ -1,20 +1,24 @@
 import re
 
-sample_text = open("sample3.txt", "r")
-dict = {}
+def unique_character_count(text_file):
 
-for line in sample_text:
-    line=line.strip().lower()
-    line = re.sub(r'[^\w\s]','',line)
-    words=line.split(" ")
+    sample_text = open(text_file, "r")
+    dict = {}
 
-    for word in words:
-        word.split()
-        for character in word:
-            if character in dict:
-                dict[character] = dict[character]+1
-            else:
-                dict[character] =1
+    for line in sample_text:
+        line=line.strip().lower()
+        line = re.sub(r'[^\w\s]','',line)
+        words=line.split(" ")
 
-for k, v in sorted (dict.items()):
-    print (k, ':', v)
+        for word in words:
+            word.split()
+            for character in word:
+                if character in dict:
+                    dict[character] = dict[character]+1
+                else:
+                    dict[character] =1
+
+    for k, v in sorted (dict.items()):
+        print (k, ':', v)
+
+unique_character_count('sample3.txt')
