@@ -3,9 +3,13 @@ import nltk.data
 from nltk.tokenize import sent_tokenize
 nltk.download('punkt')
 
-sample_text = open("sample3.txt")
-raw=sample_text.read()
+def sentence_count(text_file):
 
-sentences=nltk.sent_tokenize(raw)
+    sample_text = open(text_file)
+    raw=sample_text.read()
 
-print (f"Total Sentences: {len(sentences)}")
+    sentences=nltk.sent_tokenize(raw)
+
+    print (f"Total Sentences: {len(sentences)}")
+
+sentence_count('sample3.txt')
