@@ -1,7 +1,7 @@
 import re
 
 sample_text = open("sample3.txt", "r")
-dict = {}
+char_count=0
 
 for line in sample_text:
     line=line.strip().lower()
@@ -11,10 +11,6 @@ for line in sample_text:
     for word in words:
         word.split()
         for character in word:
-            if character in dict:
-                dict[character] = dict[character]+1
-            else:
-                dict[character] =1
+            char_count+=1
 
-for k, v in sorted (dict.items()):
-    print (k, ':', v)
+print (char_count)
