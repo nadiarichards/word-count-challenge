@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <div class="header jumbotron text-center" >
-    <h1 style="color: rgb(171, 118, 184));">Word and Character Count App</h1>
+    <h1 style="color: rgb(20, 19, 20);">Word and Character Count App</h1>
   </div>
 </head>
 
@@ -25,10 +25,11 @@
             <div class="panel-heading">
               <h4 class="panel-title">Upload Your Text File Here</h4>
             </div>
-              <div class="form-group" x-data="{ fileName: '' }">
+              <div class="form-group" x-data="{ fileName: '' }" onload="init()">
                 <div class="input-group shadow">
                   <span class="input-group-text px-3 text-muted"><i class="fas fa-image fa-lg"></i></span>
-                  <input id="txt_file" type="file" onchange="processText()" x-ref="file" @change="fileName = $refs.file.files[0].name" name="file" class="d-none">
+                  <input id="txt_file" type="file" x-ref="file" @change="fileName = $refs.file.files[0].name" name="file" class="d-none">
+                  <pre id="fileContent"></pre>
                 </div>
               </div>
             </div>
