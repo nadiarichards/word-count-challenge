@@ -10,7 +10,7 @@
 
 .header {
   text-align: center;
-  padding: 25px;
+  padding: 12px;
   height: 1000px;
   background-image: url("https://www.thesprucecrafts.com/thmb/0763mQYsZkygIvKlFAIDYY3h-b0=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-579236076-59641e375f9b583f18138ca1.jpg");
   color: rgb(15, 15, 14);
@@ -63,13 +63,13 @@ html, body {
 
 .btn {
   margin-left: 95px;
-  margin-top: 40px;
-  height: 70px;
+  margin-top: 10px;
+  height: 50px;
   width: 150px;
 }
 
 .btn-primary {
-  padding-top: 20;
+  padding-top: 15;
   font-size: 18px;
   font-weight: bold;
 }

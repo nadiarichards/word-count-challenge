@@ -13,35 +13,36 @@
 
   <div class="header jumbotron text-center" >
     <h1 style="color: rgb(20, 19, 20);">Word and Character Count App</h1>
+    <a href="https://github.com/nadiarichards/word-count-challenge" class="btn btn-primary">View Code</a>
   </div>
 </head>
-
 <body>
   <div class="container-fluid">
     <div>
       <div class="row">
         <div class="col-md-5">
-          <div class="panel panel-primary" style="width:400px; height: 250px">
+          <div class="panel panel-primary" style="width:400px; height: 500px">
             <div class="panel-heading">
               <h4 class="panel-title">Upload Your Text File Here</h4>
             </div>
               <div class="form-group">
                 <input type="file" id="txt_file" hidden="hidden" />
+                <pre id="fileContent" onload="init()"></pre>
                 <!-- <button type="button" id="custom-button">CHOOSE A FILE</button>
                 <span id="custom-text">No file chosen</span> -->
               </div>
             </div>
-          <div class="well" style="width:400px; height: 200px">
-            <h5>Instructions:</h5> 
-            <select id="selDataset" onchange="optionChanged(this.value)"></select>          
-          </div>
         </div>
         <div class="col-md-7 summary-panel" style="width:800px; height: 650px; margin-left:130px">
-          <div class="panel panel-primary" style="width:400px; height: 500px">
+          <div class="panel panel-primary" style="width:450px; height: 500px">
             <div class="panel-heading">
               <h4 class="panel-title">Summary</h4>
             </div>
-            <div class="panel-body-summary">  
+            <div class="panel-body-summary"> 
+              <div class="well" style="width:400px; height: 100px">
+                <h5>Instructions:</h5> 
+                <select id="selDataset" onchange="optionChanged(this.value)"></select>          
+              </div> 
               <p class="card-text">
                 Analysis of Medicare/Medicaid calue of care in the US. <br>
                 <br>
@@ -53,7 +54,6 @@
                 <br>               
                 We observed total revenues starkly increase in urban areas and areas with low median house incomes.
               </p>
-              <a href="https://github.com/nadiarichards/word-count-challenge" class="btn btn-primary">View the Code</a>
             </div>
           </div>
         </div>

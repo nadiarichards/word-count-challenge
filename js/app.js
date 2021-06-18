@@ -39,15 +39,18 @@
 //     reader.onload = handleFileLoad;
 //     reader.readAsText(event.target.files[0])
 // }
-// function handleFileLoad(event){
-//     console.log(event);
-//     document.getElementById('fileContent').textContent = event.target.result;
-// }
+function handleFileLoad(event){
+    console.log(event);
+    document.getElementById('fileContent').textContent = event.target.result;
+}
 
 const fileSelector = document.getElementById('txt_file');
 fileSelector.addEventListener('change', (event) => {
-  const fileList = event.target.files;
-  console.log(fileList);
+    const fileList = event.target.files;
+    const reader = new FileReader()
+    reader.onload = handleFileLoad;
+    reader.readAsText(event.target.files[0])
+    console.log(fileList);
 });
 
 // // Create Dropdown
