@@ -41,7 +41,8 @@
 // }
 function handleFileLoad(event){
     console.log(event);
-    document.getElementById('fileContent').textContent = event.target.result;
+    let fileContent=document.getElementById('fileContent').textContent = event.target.result
+    console.log(fileContent);
 }
 
 const fileSelector = document.getElementById('txt_file');
