@@ -41,7 +41,7 @@
 // }
 function handleFileLoad(event){
     console.log(event);
-    let fileContent=document.getElementById('fileContent').textContent = event.target.result
+    let fileContent=document.getElementById('textarea').textContent = event.target.result
     console.log(fileContent);
 }
 
@@ -57,7 +57,7 @@ fileSelector.addEventListener('change', (event) => {
 // // Create Dropdown
 // function init() {
 
-//   var selector = d3.select("#selDataset");
+//   var selector = d3.select("#selFunction");
 
 //   d3.json("http://127.0.0.1:5000//api/v1.0/national_stats").then((data) => {
 //     var careNames = []; 
