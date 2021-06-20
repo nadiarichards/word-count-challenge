@@ -4,7 +4,7 @@ Creating a word count app that would return a couple of different measurements.
 
 # Full Stack Word Count App
 
-Please use this link to interact with the project.
+Please use this link to interact with the project.[https://nadiarichards.github.io/word-count-challenge/]
 
 ## Background
 ---
