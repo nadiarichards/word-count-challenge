@@ -55,7 +55,7 @@ fileSelector.addEventListener('change', (event) => {
 });
 
 function wordCount(val) {
-    var wom = val.match(/\S+/g);
+    let wom = val.match(/\S+/g);
     return {
       charactersNoSpaces: val.replace(/\s+/g, '').length,
       characters: val.length,
@@ -64,16 +64,16 @@ function wordCount(val) {
     };
   }
 
-var textarea = document.getElementById('textarea');
-var result = document.getElementById('result');
+let textarea = document.getElementById('textarea');
+let result = document.getElementById('result');
   
 textarea.addEventListener('input', function() {
-    var wc = wordCount(this.value);
+    let wc = wordCount(this.value);
     result.innerHTML = (`
-     <br>Characters (no spaces):  ${wc.charactersNoSpaces}
-     <br>Characters (and spaces): ${wc.characters}
-     <br>Words: ${wc.words}
-     <br>Lines: ${wc.lines}
+     <br><strong>Characters (no spaces):  ${wc.charactersNoSpaces}
+     <br><strong>Characters (and spaces): ${wc.characters}
+     <br><strong>Words: ${wc.words}
+     <br><strong>Lines: ${wc.lines}
     `);
   });
 
