@@ -60,7 +60,9 @@ function wordCount(val) {
       charactersNoSpaces: val.replace(/\s+/g, '').length,
       characters: val.length,
       words: wom ? wom.length : 0,
-      lines: val.split(/\r*\n/).length
+      lines: val.split(/\r*\n/).length,
+      sentences: val.split('.').length,
+      paragraphs: val.split(/\r?\n|\r/).length
     };
   }
 
@@ -70,8 +72,8 @@ let result = document.getElementById('result');
 textarea.addEventListener('input', function() {
     let wc = wordCount(this.value);
     result.innerHTML = (`
-     <br><strong>Characters (no spaces):</strong>  ${wc.charactersNoSpaces}
-     <br><strong>Characters (and spaces):</strong>  ${wc.characters}
+    <br><strong>Characters (no spaces):</strong>  ${wc.charactersNoSpaces}
+    <br><strong>Characters (and spaces):</strong>  ${wc.characters}
      <br><strong>Words:</strong>  ${wc.words}
      <br><strong>Lines:</strong>  ${wc.lines}
      <br><strong>Paragraphs:</strong>  ${wc.paragraphs}
