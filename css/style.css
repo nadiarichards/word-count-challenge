@@ -8,6 +8,11 @@
   bottom: 0;
 } */
 
+textarea {
+  width: 100%;
+  font-size: 100%;
+}
+
 .header {
   text-align: center;
   padding: 12px;

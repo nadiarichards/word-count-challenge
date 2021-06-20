@@ -70,10 +70,12 @@ let result = document.getElementById('result');
 textarea.addEventListener('input', function() {
     let wc = wordCount(this.value);
     result.innerHTML = (`
-     <br><strong>Characters (no spaces):  ${wc.charactersNoSpaces}
-     <br><strong>Characters (and spaces): ${wc.characters}
-     <br><strong>Words: ${wc.words}
-     <br><strong>Lines: ${wc.lines}
+     <br><strong>Characters (no spaces):</strong>  ${wc.charactersNoSpaces}
+     <br><strong>Characters (and spaces):</strong>  ${wc.characters}
+     <br><strong>Words:</strong>  ${wc.words}
+     <br><strong>Lines:</strong>  ${wc.lines}
+     <br><strong>Paragraphs:</strong>  ${wc.paragraphs}
+     <br><strong>Sentences:</strong>  ${wc.sentences}
     `);
   });
 
