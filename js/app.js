@@ -61,8 +61,8 @@ function wordCount(val) {
       characters: val.length,
       words: wom ? wom.length : 0,
       lines: val.split(/\r*\n/).length,
-      sentences: val.split('.').length,
-      paragraphs: val.split(/\r?\n|\r/).length
+      sentences: val.match(/[^.?!]+[.!?]+[\])'"`’”]*/g).length,
+      paragraphs: val.replace(/\n$/gm, '').split(/\n/).length
     };
   }
 
