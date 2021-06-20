@@ -1,10 +1,18 @@
 # 2. Word Count Challenge
 
+<!-- [HERE](https://public.opendatasoft.com/explore/dataset/us-zip-code-latitude-and-longitude/table/?q=&refine.state=NY&location=16,40.76779,-73.96313&basemap=jawg.streets)
+
+
+## Dataset Values Utilized and Ensuing Relationships (QuickDBD) 
+---
+![Screenshot](Noah/QuickDBDv2.JPG) -->
+
+
 Creating a word count app that would return a couple of different measurements.
 
 # Full Stack Word Count App
 
-Please use this link to interact with the project.[https://nadiarichards.github.io/word-count-challenge/]
+[Please use this link to interact with the project.](https://nadiarichards.github.io/word-count-challenge/)
 
 ## Background
 ---
