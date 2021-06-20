@@ -1,12 +1,5 @@
 # 2. Word Count Challenge
 
-<!-- [HERE](https://public.opendatasoft.com/explore/dataset/us-zip-code-latitude-and-longitude/table/?q=&refine.state=NY&location=16,40.76779,-73.96313&basemap=jawg.streets)
-
-
-## Dataset Values Utilized and Ensuing Relationships (QuickDBD) 
----
-![Screenshot](Noah/QuickDBDv2.JPG) -->
-
 # Full Stack Word Count App
 
 [Please use this hyperlink to interact with the project.](https://nadiarichards.github.io/word-count-challenge/)
@@ -36,7 +29,6 @@ JavaScript front end app includes the following functions:
 * Character Count Including spaces
 * Sentence Count
 * Paragraph Count
-* Bigram Count (currently set to show bigrams repeated over 2 time sto minimize the output)
 
 ## Tools and Technology Used for the Project
 ---
