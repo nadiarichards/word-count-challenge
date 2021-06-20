@@ -60,9 +60,9 @@ function wordCount(val) {
       charactersNoSpaces: val.replace(/\s+/g, '').length,
       characters: val.length,
       words: wom ? wom.length : 0,
-      lines: val.split("\n").length,
-      sentences: (val.split(/[.|!|?]+/g).length)-1,
-      paragraphs: val.split(/\r?\n|\r/).length
+      lines: val.split(/\r*\n/).length,
+      sentences: val.split(/[.|!|?]+/g).length,
+      paragraphs: val.split("\n\n").length
     };
   }
 
