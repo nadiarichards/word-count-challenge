@@ -8,9 +8,12 @@ Please use this link to interact with the project.
 
 ## Background
 ---
-This project's main purpose was to make a full stack app that utilizes multiple tools including Python (multiple libraries, Flask API) and front-end work with HTML, CSS and JavaScript. 
+This project's main purpose was to make a full stack app that utilizes multiple tools including JavaScript and HTML, CSS. 
 
 Premise: The word count app can be a writer's best friend. One can quickly upload their file to get a number of useful metrics. The metrics to choose from are as follows:
+
+
+
 * Classic Word Count
 * Unique Word Count (currently set to show words repeated over 5 times to minimize the output)
 * Classic Character Count
