@@ -74,10 +74,10 @@ textarea.addEventListener('input', function() {
     result.innerHTML = (`
     <br><strong>Characters without spaces:</strong>  ${wc.charactersNoSpaces}
     <br><strong>Characters with spaces:</strong>  ${wc.characters}
-     <br><strong>Words:</strong>  ${wc.words}
-     <br><strong>Lines:</strong>  ${wc.lines}
-     <br><strong>Paragraphs:</strong>  ${wc.paragraphs}
-     <br><strong>Sentences:</strong>  ${wc.sentences}
+    <br><strong>Words:</strong>  ${wc.words}
+    <br><strong>Lines:</strong>  ${wc.lines}
+    <br><strong>Paragraphs:</strong>  ${wc.paragraphs}
+    <br><strong>Sentences:</strong>  ${wc.sentences}
     `);
   });
 

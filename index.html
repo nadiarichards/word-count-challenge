@@ -28,7 +28,7 @@
               <div class="form-group">
                 <input type="file" id="txt_file" />
                 <!-- <pre id="fileContent" onload="init()"></pre> -->
-                <textarea id="textarea" cols="50" rows="20" onload="init()"></textarea>
+                <textarea id="textarea" cols="50" rows="22" onload="init()"></textarea>
                 <!-- <button type="button" id="custom-button">CHOOSE A FILE</button>
                 <span id="custom-text">No file chosen</span> -->
               </div>
@@ -37,14 +37,10 @@
         <div class="col-md-7 summary-panel" style="width:800px; height: 650px; margin-left:130px">
           <div class="panel panel-primary" style="width:450px; height: 500px">
             <div class="panel-heading">
-              <h4 class="panel-title">Summary</h4>
+              <h4 class="panel-title">Output</h4>
             </div>
             <div class="panel-body-summary"> 
-              <div class="well" style="width:400px; height: 100px">
-                <h5>Instructions:</h5> 
-                <select id="selFunction" onchange="optionChanged(this.value)"></select> 
                 <div id="result"></div>   
-              </div> 
             </div>
           </div>
         </div>

@@ -36,6 +36,11 @@ textarea {
 .panel-body {
   padding-top: 30px;
 }
+
+.panel-title {
+  text-align: center;
+}
+
 html, body {
   height: 100%;
   padding: 0;
