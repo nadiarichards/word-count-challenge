@@ -38,6 +38,5 @@ textarea.addEventListener('input', function() {
     <br><strong>Lines:</strong>  ${wc.lines}
     <br><strong>Paragraphs:</strong>  ${wc.paragraphs}
     <br><strong>Sentences:</strong>  ${wc.sentences}
-    // <br><strong>Bigrams:</strong>  ${wc.bigrams}
     `);
   });
