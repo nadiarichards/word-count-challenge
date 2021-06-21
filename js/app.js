@@ -15,13 +15,14 @@
 
 function wordCount(val) {
     let wom = val.match(/\S+/g);
+    
     return {
       charactersNoSpaces: val.replace(/\s+/g, '').length,
       characters: val.length,
       words: wom ? wom.length : 0,
       lines: val.split(/\r*\n/).length,
       sentences: val.split(/[.|!|?]+/g).length,
-      paragraphs: val.split("\n\n").length
+      paragraphs: val.split("\n\n").length,
     };
   }
 
@@ -37,5 +38,6 @@ textarea.addEventListener('input', function() {
     <br><strong>Lines:</strong>  ${wc.lines}
     <br><strong>Paragraphs:</strong>  ${wc.paragraphs}
     <br><strong>Sentences:</strong>  ${wc.sentences}
+    // <br><strong>Bigrams:</strong>  ${wc.bigrams}
     `);
   });
