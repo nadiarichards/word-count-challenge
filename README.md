@@ -10,7 +10,7 @@ This project's main purpose was to make a full stack app that utilizes multiple 
 
 Premise: The word count app can be a writer's best friend. One can quickly upload their file to get a number of useful metrics. 
 
-I have written code in Python first, please see my ["py" folder](https://github.com/nadiarichards/word-count-challenge/tree/main/py). In Python I have prmarily used RegEx and NLTK Tokenizer. Python code includes the following: 
+I have written code in Python first, please see my ["py" folder](https://github.com/nadiarichards/word-count-challenge/tree/main/py). In Python I have primarily used RegEx and NLTK Tokenizer. Python code includes the following: 
 
 * Classic Word Count
 * Unique Word Count (currently set to show words repeated over 5 times to minimize the output)
